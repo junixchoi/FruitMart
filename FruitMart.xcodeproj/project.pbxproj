@@ -17,6 +17,7 @@
 		CEC189872590BB12002321D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189862590BB12002321D7 /* Product.swift */; };
 		CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189892590BDD9002321D7 /* BundleExtension.swift */; };
 		CEC1898D2590BEAA002321D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898C2590BEAA002321D7 /* Store.swift */; };
+		CEC189902590C31A002321D7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898F2590C31A002321D7 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CEC189862590BB12002321D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CEC189892590BDD9002321D7 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CEC1898C2590BEAA002321D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CEC1898F2590C31A002321D7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				CE9BF01825905EDD005D4972 /* Home.swift */,
 				CE9BF029259065DB005D4972 /* ProductRow.swift */,
+				CEC1898F2590C31A002321D7 /* ProductDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC1898D2590BEAA002321D7 /* Store.swift in Sources */,
+				CEC189902590C31A002321D7 /* ProductDetailView.swift in Sources */,
 				CE9BF01925905EDD005D4972 /* Home.swift in Sources */,
 				CE9BF01725905EDD005D4972 /* FruitMartApp.swift in Sources */,
 				CEC189872590BB12002321D7 /* Product.swift in Sources */,
