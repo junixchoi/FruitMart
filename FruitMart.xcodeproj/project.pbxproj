@@ -12,6 +12,7 @@
 		CE9BF01B25905EDF005D4972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9BF01A25905EDF005D4972 /* Assets.xcassets */; };
 		CE9BF01E25905EDF005D4972 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9BF01D25905EDF005D4972 /* Preview Assets.xcassets */; };
 		CE9BF02725905FB4005D4972 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9BF02625905FB4005D4972 /* ProductData.json */; };
+		CE9BF02A259065DB005D4972 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BF029259065DB005D4972 /* ProductRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE9BF01D25905EDF005D4972 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE9BF01F25905EDF005D4972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9BF02625905FB4005D4972 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
+		CE9BF029259065DB005D4972 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CE9BF01625905EDD005D4972 /* FruitMartApp.swift */,
 				CE9BF01825905EDD005D4972 /* ContentView.swift */,
+				CE9BF029259065DB005D4972 /* ProductRow.swift */,
 				CE9BF01A25905EDF005D4972 /* Assets.xcassets */,
 				CE9BF02625905FB4005D4972 /* ProductData.json */,
 				CE9BF01F25905EDF005D4972 /* Info.plist */,
@@ -144,6 +147,7 @@
 			files = (
 				CE9BF01925905EDD005D4972 /* ContentView.swift in Sources */,
 				CE9BF01725905EDD005D4972 /* FruitMartApp.swift in Sources */,
+				CE9BF02A259065DB005D4972 /* ProductRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
