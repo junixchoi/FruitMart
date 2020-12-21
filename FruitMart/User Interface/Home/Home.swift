@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct Home: View {
     let store: Store
     
     var body: some View {
@@ -23,8 +23,8 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(store: Store())
+        Preview(source: Home(store: Store()))
     }
 }

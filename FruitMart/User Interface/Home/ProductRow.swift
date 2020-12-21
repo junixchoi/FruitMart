@@ -82,6 +82,14 @@ private extension ProductRow {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: productSamples[0])
+        Group {
+            ForEach(productSamples) {
+                ProductRow(product: $0)
+            }
+            ProductRow(product: productSamples[0])
+                .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/) // 다크 모드 설정
+        }
+        .padding() // sizeThatFits를 이용하여 보더라도 약간의 여백을 주도록 추가
+        .previewLayout(.sizeThatFits) // 콘텐츠 크기에 맞춰서 프리뷰 컨테이너 크기 조정
     }
 }
