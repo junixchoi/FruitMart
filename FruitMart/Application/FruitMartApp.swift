@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct FruitMartApp: App {
-    var body: some Scene {
-        WindowGroup {
-            Home(store: Store())
-        }
+  var body: some Scene {
+    WindowGroup {
+      Home()
+        .environmentObject(Store())
     }
+  }
 }

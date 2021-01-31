@@ -20,6 +20,7 @@
 		CEC189902590C31A002321D7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898F2590C31A002321D7 /* ProductDetailView.swift */; };
 		CEC189942590CED1002321D7 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189932590CED1002321D7 /* Preview.swift */; };
 		CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */; };
+		CEF26DF225C6A67A00AA472A /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DF125C6A67A00AA472A /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CEC1898F2590C31A002321D7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CEC189932590CED1002321D7 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		CEF26DF125C6A67A00AA472A /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				CE9BF029259065DB005D4972 /* ProductRow.swift */,
 				CEC1898F2590C31A002321D7 /* ProductDetailView.swift */,
 				CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */,
+				CEF26DF125C6A67A00AA472A /* FavoriteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				CE9BF02F2590690F005D4972 /* ColorExtension.swift in Sources */,
 				CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */,
 				CEC189942590CED1002321D7 /* Preview.swift in Sources */,
+				CEF26DF225C6A67A00AA472A /* FavoriteButton.swift in Sources */,
 				CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
