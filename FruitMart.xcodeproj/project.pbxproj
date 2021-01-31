@@ -19,6 +19,7 @@
 		CEC1898D2590BEAA002321D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898C2590BEAA002321D7 /* Store.swift */; };
 		CEC189902590C31A002321D7 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898F2590C31A002321D7 /* ProductDetailView.swift */; };
 		CEC189942590CED1002321D7 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189932590CED1002321D7 /* Preview.swift */; };
+		CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CEC1898C2590BEAA002321D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CEC1898F2590C31A002321D7 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CEC189932590CED1002321D7 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				CE9BF01825905EDD005D4972 /* Home.swift */,
 				CE9BF029259065DB005D4972 /* ProductRow.swift */,
 				CEC1898F2590C31A002321D7 /* ProductDetailView.swift */,
+				CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				CEC189872590BB12002321D7 /* Product.swift in Sources */,
 				CE9BF02A259065DB005D4972 /* ProductRow.swift in Sources */,
 				CE9BF02F2590690F005D4972 /* ColorExtension.swift in Sources */,
+				CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */,
 				CEC189942590CED1002321D7 /* Preview.swift in Sources */,
 				CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */,
 			);
