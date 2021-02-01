@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ProductDetailView: View {
   let product: Product // 상품 정보를 전달받기 위한 프로퍼티 선언
+  @State private var showingAlert: Bool = false
   
   @State private var quantity: Int = 1
+  
+  @EnvironmentObject private var store: Store
   
   var body: some View {
     VStack(spacing: 0) {
@@ -18,6 +21,7 @@ struct ProductDetailView: View {
       orderView // 상품 정보를 출력하고 그 상품을 주문하기 위한 뷰
     }
     .edgesIgnoringSafeArea(.top)
+    .alert(isPresented: $showingAlert) { confirmAlert }
   }
 }
 
@@ -88,7 +92,9 @@ extension ProductDetailView {
   
   // 주문하기 버튼
   var placeOrderButton: some View {
-    Button(action: {}) {
+    Button(action: {
+      self.showingAlert = true
+    }) {
       Capsule()
         .fill(Color.peach)
         // 너비는 주어진 공간을 최대로 사용하고 높이는 최소, 최대치 지정
@@ -101,6 +107,20 @@ extension ProductDetailView {
         )
         .padding(.vertical, 8)
     }
+  }
+  
+  var confirmAlert: Alert {
+    Alert(title: Text("주문 확인"),
+          message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+          primaryButton: .default(Text("확인"), action: {
+            // 주문 기능
+            self.placeOrder()
+          }), secondaryButton: .cancel(Text("취소")))
+  }
+  
+  // 상품과 수량 정보를 placeOrder 메서드에 인수로 전달
+  func placeOrder() {
+    store.placeOrder(product: product, quantity: quantity)
   }
   
   // 한 문장으로 길게 구성한 상품 설명 문장을, 화면에 좀 더 적절하게 나타내기 위해 두 줄로 나누어주는 함수

@@ -21,6 +21,7 @@
 		CEC189942590CED1002321D7 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189932590CED1002321D7 /* Preview.swift */; };
 		CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */; };
 		CEF26DF225C6A67A00AA472A /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DF125C6A67A00AA472A /* FavoriteButton.swift */; };
+		CEF26DF525C8306600AA472A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF26DF425C8306600AA472A /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CEC189932590CED1002321D7 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		CEF26DEE25C69AD500AA472A /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		CEF26DF125C6A67A00AA472A /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		CEF26DF425C8306600AA472A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				CEC189862590BB12002321D7 /* Product.swift */,
 				CEC1898C2590BEAA002321D7 /* Store.swift */,
+				CEF26DF425C8306600AA472A /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				CE9BF01725905EDD005D4972 /* FruitMartApp.swift in Sources */,
 				CEC189872590BB12002321D7 /* Product.swift in Sources */,
 				CE9BF02A259065DB005D4972 /* ProductRow.swift in Sources */,
+				CEF26DF525C8306600AA472A /* Order.swift in Sources */,
 				CE9BF02F2590690F005D4972 /* ColorExtension.swift in Sources */,
 				CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */,
 				CEC189942590CED1002321D7 /* Preview.swift in Sources */,
