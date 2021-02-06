@@ -10,9 +10,8 @@ import SwiftUI
 struct ProductDetailView: View {
   let product: Product // 상품 정보를 전달받기 위한 프로퍼티 선언
   @State private var showingAlert: Bool = false
-  
   @State private var quantity: Int = 1
-  
+  @State private var showingPopup: Bool = false
   @EnvironmentObject private var store: Store
   
   var body: some View {
@@ -20,6 +19,10 @@ struct ProductDetailView: View {
       productImage // 상품 이미지
       orderView // 상품 정보를 출력하고 그 상품을 주문하기 위한 뷰
     }
+    // .modifier(Popup(style: .blur, message: Text("팝업")))
+    // 팝업 크기 지정 및 dimmed 스타일 적용
+    //.modifier(Popup(size: CGSize(width: 200, height: 200), style: .dimmed, message: Text("팝업")))
+    .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
     .edgesIgnoringSafeArea(.top)
     .alert(isPresented: $showingAlert) { confirmAlert }
   }
@@ -120,6 +123,7 @@ extension ProductDetailView {
   // 상품과 수량 정보를 placeOrder 메서드에 인수로 전달
   func placeOrder() {
     store.placeOrder(product: product, quantity: quantity)
+    showingPopup = true
   }
   
   // 한 문장으로 길게 구성한 상품 설명 문장을, 화면에 좀 더 적절하게 나타내기 위해 두 줄로 나누어주는 함수
