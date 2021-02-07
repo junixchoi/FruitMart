@@ -13,7 +13,7 @@ enum PopupStyle {
   case dimmed
 }
 
-struct Popup<Message: View>: ViewModifier { // ViewModifier 프로토콜 채택
+fileprivate struct Popup<Message: View>: ViewModifier { // ViewModifier 프로토콜 채택
   let size: CGSize? // 팝업창의 크기
   let style: PopupStyle // 앞에서 정의한 팝업 스타일
   let message: Message // 팝업창에 나타낼 메시지
@@ -78,6 +78,15 @@ fileprivate struct PopupToggle: ViewModifier { // ViewModifier 프로토콜 채�
   }
 }
 
+fileprivate struct PopupItem<Item: Identifiable>: ViewModifier {
+  @Binding var item: Item?
+  func body(content: Content) -> some View {
+    content
+      .disabled(item != nil)
+      .onTapGesture { self.item = nil }
+  }
+}
+
 extension View {
   func popup<Content: View>(
     isPresented: Binding<Bool>,
@@ -92,6 +101,44 @@ extension View {
       return AnyView(modifiedContent)
     } else {
       return AnyView(self)
+    }
+  }
+  
+  func popup<Content: View, Item: Identifiable>(
+    item: Binding<Item?>,
+    size: CGSize? = nil,
+    style: PopupStyle = .none,
+    @ViewBuilder content: (Item) -> Content
+  ) -> some View {
+    if let selectedItem = item.wrappedValue {
+      let content = content(selectedItem)
+      let popup = Popup(size: size, style: style, message: content)
+      let popupItem = PopupItem(item: item)
+      let modifiedContent = self.modifier(popup).modifier(popupItem)
+      return AnyView(modifiedContent)
+    } else {
+      return AnyView(self)
+    }
+  }
+  
+  func popupOverContext<Item: Identifiable, Content: View>(
+    item: Binding<Item?>,
+    size: CGSize? = nil,
+    style: PopupStyle = .none,
+    ignoringEdges edges: Edge.Set = .all,
+    @ViewBuilder content: (Item) -> Content
+  ) -> some View  {
+    let isNonNil = item.wrappedValue != nil
+    return ZStack {
+      self
+        .blur(radius: isNonNil && style == .blur ? 2 : 0)
+      // 아이템이 있을 경우에만
+      if isNonNil {
+        Color.black
+          .luminanceToAlpha()
+          .popup(item: item, size: size, style: style, content: content)
+          .edgesIgnoringSafeArea(edges)
+      }
     }
   }
 }
