@@ -12,6 +12,7 @@ struct FruitMartApp: App {
   var body: some Scene {
     WindowGroup {
       Home()
+        .accentColor(Color.primary)
         .environmentObject(Store())
     }
   }
