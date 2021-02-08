@@ -21,6 +21,8 @@
 		CEB901B325CED4B900F312A6 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901B225CED4B900F312A6 /* OrderCompletedMessage.swift */; };
 		CEB901B625D032C100F312A6 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901B525D032C100F312A6 /* FavoriteProductScrollView.swift */; };
 		CEB901BA25D16DDD00F312A6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901B925D16DDD00F312A6 /* MainTabView.swift */; };
+		CEB901BD25D1769700F312A6 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901BC25D1769700F312A6 /* Recipe.swift */; };
+		CEB901C125D1770D00F312A6 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901C025D1770D00F312A6 /* RecipeView.swift */; };
 		CEC189872590BB12002321D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189862590BB12002321D7 /* Product.swift */; };
 		CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189892590BDD9002321D7 /* BundleExtension.swift */; };
 		CEC1898D2590BEAA002321D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898C2590BEAA002321D7 /* Store.swift */; };
@@ -48,6 +50,8 @@
 		CEB901B225CED4B900F312A6 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		CEB901B525D032C100F312A6 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 		CEB901B925D16DDD00F312A6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		CEB901BC25D1769700F312A6 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		CEB901C025D1770D00F312A6 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		CEC189862590BB12002321D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CEC189892590BDD9002321D7 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CEC1898C2590BEAA002321D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9BF032259069A8005D4972 /* Home */,
+				CEB901BF25D176F300F312A6 /* Recipe */,
 				CEB901B925D16DDD00F312A6 /* MainTabView.swift */,
 			);
 			path = "User Interface";
@@ -175,12 +180,21 @@
 			path = ViewModifier;
 			sourceTree = "<group>";
 		};
+		CEB901BF25D176F300F312A6 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				CEB901C025D1770D00F312A6 /* RecipeView.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 		CEC189852590BAF8002321D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CEC189862590BB12002321D7 /* Product.swift */,
 				CEC1898C2590BEAA002321D7 /* Store.swift */,
 				CEF26DF425C8306600AA472A /* Order.swift */,
+				CEB901BC25D1769700F312A6 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,6 +282,7 @@
 				CEC1898D2590BEAA002321D7 /* Store.swift in Sources */,
 				CEC189902590C31A002321D7 /* ProductDetailView.swift in Sources */,
 				CE9BF01925905EDD005D4972 /* Home.swift in Sources */,
+				CEB901C125D1770D00F312A6 /* RecipeView.swift in Sources */,
 				CE9BF01725905EDD005D4972 /* FruitMartApp.swift in Sources */,
 				CEC189872590BB12002321D7 /* Product.swift in Sources */,
 				CEB901BA25D16DDD00F312A6 /* MainTabView.swift in Sources */,
@@ -284,6 +299,7 @@
 				CEF26DF225C6A67A00AA472A /* FavoriteButton.swift in Sources */,
 				CEB901AB25CECB8200F312A6 /* ShrinkButtonStyle.swift in Sources */,
 				CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */,
+				CEB901BD25D1769700F312A6 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,8 @@ struct MainTabView: View {
     }
     .accentColor(.peach) // 탭 뷰에 peach 적용
     .edgesIgnoringSafeArea(.top)
+    // selectedTab의 값이 recipe인 경우에만 상태 표시줄 숨김 처리
+    .statusBar(hidden: selectedTab == .recipe)
   }
 }
 
@@ -39,7 +41,7 @@ private extension MainTabView {
   }
   
   var recipe: some View {
-    Text("레시피")
+    RecipeView()
       .tag(Tabs.recipe)
       .tabItem(image: "book", text: "레시피")
   }
