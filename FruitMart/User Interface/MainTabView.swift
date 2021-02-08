@@ -34,6 +34,8 @@ private extension MainTabView {
     Home()
       .tag(Tabs.home)
       .tabItem(image: "house", text: "홈")
+      // iOS 14.0에서는 이 방식이 적용되지 않습니다.
+      .onAppear { UITableView.appearance().separatorStyle = .none }
   }
   
   var recipe: some View {

@@ -67,6 +67,11 @@ private extension Home {
         // iOS 14에서 동작하지 않으므로 관련 코드 제거
         NavigationLink(destination: ProductDetailView(product: product)) {
           ProductRow(quickOrder: $quickOrder, product: product)
+//          NavigationLink(destination: ProductDetailView(product: product)) {
+//            EmptyView()
+//          }
+//          .frame(width: 0)
+//          .hidden()
         }
       }
       .listRowBackground(Color.background)
