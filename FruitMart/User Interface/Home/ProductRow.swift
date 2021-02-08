@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductRow: View {
   @EnvironmentObject var store: Store
   @Binding var quickOrder: Product?
+  @State private var willAppear: Bool = false
   
   let product: Product
   
@@ -25,6 +26,9 @@ struct ProductRow: View {
     .cornerRadius(6)
     .shadow(color: Color.primaryShadow, radius: 1, x: 2, y: 2)
     .padding(.vertical, 8)
+    .opacity(willAppear ? 1 : 0)
+    .animation(.easeInOut(duration: 0.4))
+    .onAppear { self.willAppear = true }
   }
 }
 

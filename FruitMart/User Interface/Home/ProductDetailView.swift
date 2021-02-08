@@ -13,10 +13,13 @@ struct ProductDetailView: View {
   @State private var quantity: Int = 1
   @State private var showingPopup: Bool = false
   @EnvironmentObject private var store: Store
+  @State private var willAppear: Bool = false
   
   var body: some View {
     VStack(spacing: 0) {
-      productImage // 상품 이미지
+      if willAppear {
+        productImage // 상품 이미지
+      }
       orderView // 상품 정보를 출력하고 그 상품을 주문하기 위한 뷰
     }
     // .modifier(Popup(style: .blur, message: Text("팝업")))
@@ -25,14 +28,19 @@ struct ProductDetailView: View {
     .popup(isPresented: $showingPopup) { OrderCompletedMessage() }
     .edgesIgnoringSafeArea(.top)
     .alert(isPresented: $showingAlert) { confirmAlert }
+    // 화면이 나타나는 시점에 productImage가 뷰 계층 구조에 추가되도록 구현
+    .onAppear { self.willAppear = true }
   }
 }
 
 extension ProductDetailView {
   var productImage: some View {
-    GeometryReader { _ in
+    let effect = AnyTransition.scale.combined(with: .opacity)
+      .animation(Animation.easeInOut(duration: 0.4).delay(0.05))
+    return GeometryReader { _ in
       ResizedImage(self.product.imageName)
     }
+    .transition(effect)
   }
   
   // 상품 설명과 주문하기 버튼 등을 모두 포함하는 컨테이너
