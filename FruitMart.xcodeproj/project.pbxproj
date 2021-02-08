@@ -26,6 +26,8 @@
 		CEB901C425D18F2900F312A6 /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901C325D18F2900F312A6 /* Stripes.swift */; };
 		CEB901C725D1915600F312A6 /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901C625D1915600F312A6 /* ShapeClipModifier.swift */; };
 		CEB901CA25D1938C00F312A6 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901C925D1938C00F312A6 /* AnyTransitionExtension.swift */; };
+		CEB901CE25D195A700F312A6 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901CD25D195A700F312A6 /* FruitCard.swift */; };
+		CEB901D125D196C400F312A6 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901D025D196C400F312A6 /* ImageGallery.swift */; };
 		CEC189872590BB12002321D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189862590BB12002321D7 /* Product.swift */; };
 		CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189892590BDD9002321D7 /* BundleExtension.swift */; };
 		CEC1898D2590BEAA002321D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898C2590BEAA002321D7 /* Store.swift */; };
@@ -58,6 +60,8 @@
 		CEB901C325D18F2900F312A6 /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
 		CEB901C625D1915600F312A6 /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
 		CEB901C925D1938C00F312A6 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
+		CEB901CD25D195A700F312A6 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		CEB901D025D196C400F312A6 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		CEC189862590BB12002321D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CEC189892590BDD9002321D7 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CEC1898C2590BEAA002321D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			children = (
 				CE9BF032259069A8005D4972 /* Home */,
 				CEB901BF25D176F300F312A6 /* Recipe */,
+				CEB901CC25D1958000F312A6 /* ImageGallery */,
 				CEB901B925D16DDD00F312A6 /* MainTabView.swift */,
 			);
 			path = "User Interface";
@@ -194,6 +199,15 @@
 				CEB901C025D1770D00F312A6 /* RecipeView.swift */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		CEB901CC25D1958000F312A6 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				CEB901CD25D195A700F312A6 /* FruitCard.swift */,
+				CEB901D025D196C400F312A6 /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
 			sourceTree = "<group>";
 		};
 		CEC189852590BAF8002321D7 /* Model */ = {
@@ -298,6 +312,7 @@
 				CEB901B325CED4B900F312A6 /* OrderCompletedMessage.swift in Sources */,
 				CEB901A425CEC93600F312A6 /* Symbol.swift in Sources */,
 				CEB901B625D032C100F312A6 /* FavoriteProductScrollView.swift in Sources */,
+				CEB901D125D196C400F312A6 /* ImageGallery.swift in Sources */,
 				CE9BF02A259065DB005D4972 /* ProductRow.swift in Sources */,
 				CEF26DF525C8306600AA472A /* Order.swift in Sources */,
 				CEB901A725CEC9DF00F312A6 /* ResizedImage.swift in Sources */,
@@ -306,6 +321,7 @@
 				CEB901CA25D1938C00F312A6 /* AnyTransitionExtension.swift in Sources */,
 				CEB901B025CECCE000F312A6 /* Popup.swift in Sources */,
 				CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */,
+				CEB901CE25D195A700F312A6 /* FruitCard.swift in Sources */,
 				CEC189942590CED1002321D7 /* Preview.swift in Sources */,
 				CEF26DF225C6A67A00AA472A /* FavoriteButton.swift in Sources */,
 				CEB901AB25CECB8200F312A6 /* ShrinkButtonStyle.swift in Sources */,
