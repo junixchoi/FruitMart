@@ -44,9 +44,9 @@ extension ProductDetailView {
         self.priceInfo // 가격 정보
         self.placeOrderButton // 주문하기 버튼
       }
-      // geometry reader가 차지하는 뷰의 높이보다 VStack의 높이가 10만큼 크도록 지정
-      .frame(height: $0.size.height + -18)
       .padding(32)
+      // geometry reader가 차지하는 뷰의 높이보다 VStack의 높이가 10만큼 크도록 지정
+      .frame(height: $0.size.height + 10)
       .background(Color.white) // 다크모드에서 흰색 배경을 사용하기 위해 white 지정
       .cornerRadius(16)
       .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: -5)

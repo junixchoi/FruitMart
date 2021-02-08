@@ -11,8 +11,7 @@ import SwiftUI
 struct FruitMartApp: App {
   var body: some Scene {
     WindowGroup {
-      Home()
-        .accentColor(Color.primary)
+      MainTabView()
         .environmentObject(Store())
     }
   }
