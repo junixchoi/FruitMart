@@ -84,5 +84,6 @@ private extension Home {
   
   var showFavorite: Bool {
     !store.products.filter({ $0.isFavorite }).isEmpty
+      && store.appSetting.showFavoriteList
   }
 }

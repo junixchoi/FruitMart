@@ -31,6 +31,7 @@
 		CEB901D525D2C73200F312A6 /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901D425D2C73200F312A6 /* MyPage.swift */; };
 		CEB901D925D2C84A00F312A6 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901D825D2C84A00F312A6 /* OrderListView.swift */; };
 		CEB901DC25D2D0A200F312A6 /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901DB25D2D0A200F312A6 /* OrderRow.swift */; };
+		CEB901DF25D2DC6F00F312A6 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB901DE25D2DC6F00F312A6 /* AppSetting.swift */; };
 		CEC189872590BB12002321D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189862590BB12002321D7 /* Product.swift */; };
 		CEC1898A2590BDD9002321D7 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC189892590BDD9002321D7 /* BundleExtension.swift */; };
 		CEC1898D2590BEAA002321D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1898C2590BEAA002321D7 /* Store.swift */; };
@@ -68,6 +69,7 @@
 		CEB901D425D2C73200F312A6 /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
 		CEB901D825D2C84A00F312A6 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		CEB901DB25D2D0A200F312A6 /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
+		CEB901DE25D2DC6F00F312A6 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		CEC189862590BB12002321D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CEC189892590BDD9002321D7 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		CEC1898C2590BEAA002321D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				CEC1898C2590BEAA002321D7 /* Store.swift */,
 				CEF26DF425C8306600AA472A /* Order.swift */,
 				CEB901BC25D1769700F312A6 /* Recipe.swift */,
+				CEB901DE25D2DC6F00F312A6 /* AppSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				CEB901CA25D1938C00F312A6 /* AnyTransitionExtension.swift in Sources */,
 				CEB901D925D2C84A00F312A6 /* OrderListView.swift in Sources */,
 				CEB901B025CECCE000F312A6 /* Popup.swift in Sources */,
+				CEB901DF25D2DC6F00F312A6 /* AppSetting.swift in Sources */,
 				CEF26DEF25C69AD500AA472A /* QuantitySelector.swift in Sources */,
 				CEB901CE25D195A700F312A6 /* FruitCard.swift in Sources */,
 				CEC189942590CED1002321D7 /* Preview.swift in Sources */,

@@ -19,7 +19,7 @@ struct ProductRow: View {
       productImage
       productDescription
     }
-    .frame(height: 150)
+    .frame(height: store.appSetting.productRowHeight)
     // colorInvert - 색상 반전
     .background(Color.primary.colorInvert())
     // 뷰 모서리 둥글게 처리
