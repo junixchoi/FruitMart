@@ -37,7 +37,7 @@ private extension MainTabView {
       .tag(Tabs.home)
       .tabItem(image: "house", text: "홈")
       // iOS 14.0에서는 이 방식이 적용되지 않습니다.
-      .onAppear { UITableView.appearance().separatorStyle = .none }
+      .onAppear { UITableView.appearance().separatorStyle = .singleLine }
   }
   
   var recipe: some View {
@@ -53,7 +53,7 @@ private extension MainTabView {
   }
   
   var myPage: some View {
-    Text("마이페이지")
+    MyPage()
       .tag(Tabs.myPage)
       .tabItem(image: "person", text: "마이페이지")
   }
