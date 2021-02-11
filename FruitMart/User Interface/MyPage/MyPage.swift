@@ -9,16 +9,68 @@ import SwiftUI
 
 struct MyPage: View {
   @EnvironmentObject var store: Store // 앱 설정에 접근하기 위해
-  private let pickerDataSource: [CGFloat] = [140, 150, 160] // 피커 선택지
+  @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
+  @State private var nickname: String = ""
   
+  private let pickerDataSource: [CGFloat] = [140, 150, 160] // 피커 선택지
+
   var body: some View {
     NavigationView {
-      Form { // 폼을 이용해 마이페이지 메뉴 그룹화
-        orderInfoSection
-        appSettingSection
+      VStack {
+        userInfo
+        
+        Form { // 폼을 이용해 마이페이지 메뉴 그룹화
+          orderInfoSection
+          appSettingSection
+        }
       }
       .navigationBarTitle("마이페이지")
     }
+  }
+}
+
+private extension MyPage {
+  var userInfo: some View { // 프로필 사진과 닉네임이 들어갈 컨테이너 역할
+    VStack {
+      profileImage
+      nicknameTextField
+    }
+    .frame(maxWidth: .infinity, minHeight: 200)
+    .background(Color.background)
+  }
+  
+  var profileImage: some View { // 프로필 사진
+    pickedImage
+      .resizable()
+      .scaledToFill()
+      .clipShape(Circle())
+      .frame(width: 100, height: 100)
+      .overlay(
+        pickImageButton
+          .offset(x: 8, y: 0),
+        alignment: .bottomTrailing
+      )
+  }
+  
+  var pickImageButton: some View { // 프로필 사진 변경 버튼
+    Button( action: {}) {
+      Circle()
+        .fill(Color.white)
+        .frame(width: 32, height: 32)
+        .shadow(color: .primaryShadow, radius: 2, x: 2, y: 2)
+        .overlay(
+          Image("pencil")
+            .foregroundColor(.black)
+        )
+    }
+  }
+  
+  var nicknameTextField: some View {
+    TextField("닉네임", text: $nickname)
+      .font(.system(size: 25, weight: .medium))
+      .textContentType(.nickname) // 텍스트 필드 사용 용도
+      .multilineTextAlignment(.center) // 텍스트 가운데 정렬
+      .autocapitalization(.none) // 자동 대문자화 비활성화
   }
   
   var appSettingSection: some View {
