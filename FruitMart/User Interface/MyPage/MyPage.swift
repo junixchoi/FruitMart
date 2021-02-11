@@ -11,6 +11,7 @@ struct MyPage: View {
   @EnvironmentObject var store: Store // 앱 설정에 접근하기 위해
   @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
   @State private var nickname: String = ""
+  @State private var isPickerPresented: Bool = false
   
   private let pickerDataSource: [CGFloat] = [140, 150, 160] // 피커 선택지
 
@@ -25,6 +26,9 @@ struct MyPage: View {
         }
       }
       .navigationBarTitle("마이페이지")
+    }
+    .sheet(isPresented: $isPickerPresented) {
+      ImagePickerView(pickedImage: self.$pickedImage)
     }
   }
 }
@@ -53,7 +57,9 @@ private extension MyPage {
   }
   
   var pickImageButton: some View { // 프로필 사진 변경 버튼
-    Button( action: {}) {
+    Button( action: {
+      self.isPickerPresented = true
+    }) {
       Circle()
         .fill(Color.white)
         .frame(width: 32, height: 32)
